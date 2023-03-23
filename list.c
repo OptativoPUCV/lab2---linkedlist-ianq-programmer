@@ -35,12 +35,20 @@ List * createList()
   lista->head = NULL;
   lista->tail = NULL;
   lista->current = NULL;
-    
-  return lista;
+    return lista;
 }
 
-void * firstList(List * list) {
+void * firstList(List * list) 
+{
+  Node* n = list->head;
+
+  list->current = n;
+
+  if(n == NULL)
     return NULL;
+    
+  
+  return n->data;
 }
 
 void * nextList(List * list) {
