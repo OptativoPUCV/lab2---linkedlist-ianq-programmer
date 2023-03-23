@@ -30,7 +30,7 @@ Node * createNode(void * data) {
 
 List * createList() 
 {
-  List->lista =  (List *) malloc(sizeof(List));
+  List *lista =  (List *) malloc(sizeof(List));
 
   lista->head = NULL;
   lista->tail = NULL;
