@@ -213,3 +213,25 @@ list.c:105:18: note: each undeclared identifier is reported only once for each f
 cc1: all warnings being treated as errors
 Compilation failed
 a493c7c
+Sun 26 Mar 2023 02:30:28 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:103:5: error: expected ‘(’ before ‘*’ token
+  103 |   if*list->current == list->tail)
+      |     ^
+      |     (
+list.c:103:5: error: statement with no effect [-Werror=unused-value]
+  103 |   if*list->current == list->tail)
+      |     ^~~~~~~~~~~~~~
+list.c:103:3: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+  103 |   if*list->current == list->tail)
+      |   ^~
+list.c:103:33: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+  103 |   if*list->current == list->tail)
+      |                                 ^
+list.c:103:33: error: expected statement before ‘)’ token
+cc1: all warnings being treated as errors
+Compilation failed
+bec3ecb
