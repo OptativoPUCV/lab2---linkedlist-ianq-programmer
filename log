@@ -167,3 +167,16 @@ list.c:90:19: error: expected ‘;’ before ‘}’ token
       |   ~                
 Compilation failed
 6c46925
+Sun 26 Mar 2023 02:06:58 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:90:19: error: expected ‘;’ before ‘}’ token
+   90 |     list->head = n
+      |                   ^
+      |                   ;
+   91 |   }
+      |   ~                
+Compilation failed
+ddb1df0
