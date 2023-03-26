@@ -51,8 +51,10 @@ void * firstList(List * list)
   return n->data;
 }
 
-void * nextList(List * list) {
-    return NULL;
+void * nextList(List * list) 
+{
+    
+  return NULL;
 }
 
 void * lastList(List * list) {
