@@ -100,7 +100,7 @@ void pushCurrent(List * list, void * data)
 {
   Node *nuevoDato;
   nuevoDato = createNode(data);
-  if*list->current == list->tail)
+  if(list->current == list->tail)
     {
     list->tail = nuevoDato;
     }
